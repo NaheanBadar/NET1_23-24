@@ -17,6 +17,16 @@ surv:Cookie a rdfs:Class ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
+surv:Loi a rdfs:Class ;
+    rdfs:label "Loi" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:RegleNumerique a rdfs:Class ;
+    rdfs:label "RegleNumerique" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
 surv:Rgpb a rdfs:Class ;
     rdfs:label "RGPD" ;
     rdfs:domain o:Resource ;
@@ -28,8 +38,26 @@ surv:hasCookie a rdf:Property ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
+surv:hasLoi a rdf:Property ;
+    rdfs:label "A comme Loi" ;
+    rdfs:comment "Relation avec la loi" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasRegleNumerique a rdf:Property ;
+    rdfs:label "A comme Regle Numerique" ;
+    rdfs:comment "Relation avec la loi" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
 surv:hasRGPD a rdf:Property ;
     rdfs:label "A comme RGPD" ;
     rdfs:comment "Relation avec les Cookies" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasRGPD a rdf:Property ;
+    rdfs:label "A comme RGPD" ;
+    rdfs:comment "Relation avec la Regle Numerique" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
