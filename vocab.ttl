@@ -17,9 +17,14 @@ surv:Cookie a rdfs:Class ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-
 surv:Rgpb a rdfs:Class ;
     rdfs:label "RGPD" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasCookie a rdf:Property ;
+    rdfs:label "A comme Cookie" ;
+    rdfs:comment "Relation avec un Cookie" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
