@@ -32,6 +32,26 @@ surv:Rgpb a rdfs:Class ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
+surv:SiteWeb a rdfs:Class ;
+    rdfs:label "SiteWeb" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:Surveillance a rdfs:Class ;
+    rdfs:label "Surveillance" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:Internet a rdfs:Class ;
+    rdfs:label "Neutralite" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:Neutralite a rdfs:Class ;
+    rdfs:label "Neutralite" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
 surv:hasCookie a rdf:Property ;
     rdfs:label "A comme Cookie" ;
     rdfs:comment "Relation avec un Cookie" ;
@@ -59,5 +79,47 @@ surv:hasRGPD a rdf:Property ;
 surv:hasRGPD a rdf:Property ;
     rdfs:label "A comme RGPD" ;
     rdfs:comment "Relation avec la Regle Numerique" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasSiteWeb a rdf:Property ;
+    rdfs:label "A comme SiteWeb" ;
+    rdfs:comment "Relation avec les Cookies" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasRGPD a rdf:Property ;
+    rdfs:label "A comme RGPD" ;
+    rdfs:comment "Relation avec un SiteWeb" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasSurveillance a rdf:Property ;
+    rdfs:label "A comme Surveillance" ;
+    rdfs:comment "Relation avec un SiteWeb" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasSurveillance a rdf:Property ;
+    rdfs:label "A comme Surveillance" ;
+    rdfs:comment "Relation avec les Cookies" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasInternet a rdf:Property ;
+    rdfs:label "A comme Internet" ;
+    rdfs:comment "Relation avec un SiteWeb" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasInternet a rdf:Property ;
+    rdfs:label "A comme Internet" ;
+    rdfs:comment "Relation avec la Surveillance" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasNeutralite a rdf:Property ;
+    rdfs:label "A comme Neutralite" ;
+    rdfs:comment "Relation avec Internet" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
