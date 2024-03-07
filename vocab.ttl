@@ -92,6 +92,24 @@ surv:PolitiqueDeSecu a rdfs:Class ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
+surv:hasCookie a rdf:Property ;
+    rdfs:label "Les Cookies " ;
+    rdfs:comment "Relation avec un Utilisateur" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasCookie a rdf:Property ;
+    rdfs:label "Les Cookies " ;
+    rdfs:comment "Relation avec la loi" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasCookie a rdf:Property ;
+    rdfs:label "Les Cookies " ;
+    rdfs:comment "Relation avec la CNIL" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
 surv:hasLoi a rdf:Property ;
     rdfs:label "A comme Loi" ;
     rdfs:comment "Relation avec la loi" ;
@@ -320,8 +338,38 @@ surv:hasUtilisateur a rdf:Property ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-surv:hasUtilisateur a rdf:Property ;
-    rdfs:label "A comme Utilisateur" ;
+surv:unUtilisateur a rdf:Property ;
+    rdfs:label "Un Utilisateur" ;
     rdfs:comment "Relation avec des anomalies" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:chezUnUtilisateur a rdf:Property ;
+    rdfs:label "Un Utilisateur" ;
+    rdfs:comment "Relation avec une Intrusion" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasIntrusion a rdf:Property ;
+    rdfs:label "Une Intrusion" ;
+    rdfs:comment "Relation avec un utilisateur" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:uneIntrusion a rdf:Property ;
+    rdfs:label "Une Intrusion" ;
+    rdfs:comment "Relation avec un site web" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasAlerte a rdf:Property ;
+    rdfs:label "Une Alerte" ;
+    rdfs:comment "Relation avec une anomalie" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:uneAlerte a rdf:Property ;
+    rdfs:label "Une Alerte" ;
+    rdfs:comment "Relation avec la securite" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
