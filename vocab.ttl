@@ -72,9 +72,23 @@ surv:Cyberhygiene a rdfs:Class ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-surv:hasCookie a rdf:Property ;
-    rdfs:label "A comme Cookie" ;
-    rdfs:comment "Relation avec un Cookie" ;
+surv:Utilisateur a rdfs:Class ;
+    rdfs:label "Utilisateur" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:Anomalie a rdfs:Class ;
+    rdfs:label "Anomalie" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:Intrusion a rdfs:Class ;
+    rdfs:label "Intrusion" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:PolitiqueDeSecu a rdfs:Class ;
+    rdfs:label "Politique de securite" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
@@ -108,6 +122,12 @@ surv:hasSiteWeb a rdf:Property ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
+surv:hasSiteWeb a rdf:Property ;
+    rdfs:label "A comme SiteWeb" ;
+    rdfs:comment "Relation avec la Politique de securite" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
 surv:hasRGPD a rdf:Property ;
     rdfs:label "A comme RGPD" ;
     rdfs:comment "Relation avec un SiteWeb" ;
@@ -135,6 +155,18 @@ surv:hasInternet a rdf:Property ;
 surv:hasInternet a rdf:Property ;
     rdfs:label "A comme Internet" ;
     rdfs:comment "Relation avec la Surveillance" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasInternet a rdf:Property ;
+    rdfs:label "A comme Internet" ;
+    rdfs:comment "Relation avec la tracabilite" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasInternet a rdf:Property ;
+    rdfs:label "A comme Internet" ;
+    rdfs:comment "Relation avec la Politique de securite" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
@@ -210,6 +242,18 @@ surv:hasSecurite a rdf:Property ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
+surv:hasSecurite a rdf:Property ;
+    rdfs:label "A comme Securite" ;
+    rdfs:comment "Relation avec les anomalies" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasSecurite a rdf:Property ;
+    rdfs:label "A comme Securite" ;
+    rdfs:comment "Relation avec la tracabilite" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
 surv:hasCyberhygiene a rdf:Property ;
     rdfs:label "A comme Cyberhygiene" ;
     rdfs:comment "Relation avec les Donnees personnelles" ;
@@ -231,5 +275,53 @@ surv:hasCyberhygiene a rdf:Property ;
 surv:hasCyberhygiene a rdf:Property ;
     rdfs:label "A comme Cyberhygiene" ;
     rdfs:comment "Relation avec la Securite" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasCyberhygiene a rdf:Property ;
+    rdfs:label "A comme Cyberhygiene" ;
+    rdfs:comment "Relation avec des bonnes pratiques" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasUtilisateur a rdf:Property ;
+    rdfs:label "A comme Utilisateur" ;
+    rdfs:comment "Relation avec la surveillance" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasUtilisateur a rdf:Property ;
+    rdfs:label "A comme Utilisateur" ;
+    rdfs:comment "Relation avec la tracabilite" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasUtilisateur a rdf:Property ;
+    rdfs:label "A comme Utilisateur" ;
+    rdfs:comment "Relation avec les donnees personnelles" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasUtilisateur a rdf:Property ;
+    rdfs:label "A comme Utilisateur" ;
+    rdfs:comment "Relation avec Internet" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasUtilisateur a rdf:Property ;
+    rdfs:label "A comme Utilisateur" ;
+    rdfs:comment "Relation avec Site Web" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasUtilisateur a rdf:Property ;
+    rdfs:label "A comme Utilisateur" ;
+    rdfs:comment "Relation avec Cyberhygiene" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasUtilisateur a rdf:Property ;
+    rdfs:label "A comme Utilisateur" ;
+    rdfs:comment "Relation avec des anomalies" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
