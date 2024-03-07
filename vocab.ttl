@@ -218,6 +218,18 @@ surv:hasDonneePerso a rdf:Property ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
+surv:hasDonneePerso a rdf:Property ;
+    rdfs:label "A comme DonneePerso" ;
+    rdfs:comment "Relation avec un Utilisateur" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasDonneePerso a rdf:Property ;
+    rdfs:label "A comme DonneePerso" ;
+    rdfs:comment "Relation avec une Intrusion" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
 surv:hasCNIL a rdf:Property ;
     rdfs:label "A comme CNIL" ;
     rdfs:comment "Relation avec les Cookies" ;
@@ -338,38 +350,44 @@ surv:hasUtilisateur a rdf:Property ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-surv:unUtilisateur a rdf:Property ;
-    rdfs:label "Un Utilisateur" ;
+surv:hasUtilisateur a rdf:Property ;
+    rdfs:label "A comme Utilisateur" ;
     rdfs:comment "Relation avec des anomalies" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-surv:chezUnUtilisateur a rdf:Property ;
-    rdfs:label "Un Utilisateur" ;
+surv:hasUtilisateur a rdf:Property ;
+    rdfs:label "A comme Utilisateur" ;
     rdfs:comment "Relation avec une Intrusion" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
 surv:hasIntrusion a rdf:Property ;
-    rdfs:label "Une Intrusion" ;
+    rdfs:label "A comme Intrusion" ;
     rdfs:comment "Relation avec un utilisateur" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-surv:uneIntrusion a rdf:Property ;
-    rdfs:label "Une Intrusion" ;
+surv:hasIntrusion a rdf:Property ;
+    rdfs:label "A comme Intrusion" ;
     rdfs:comment "Relation avec un site web" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
 surv:hasAlerte a rdf:Property ;
-    rdfs:label "Une Alerte" ;
+    rdfs:label "A comme Alerte" ;
     rdfs:comment "Relation avec une anomalie" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-surv:uneAlerte a rdf:Property ;
-    rdfs:label "Une Alerte" ;
+surv:hasAlerte a rdf:Property ;
+    rdfs:label "A comme Alerte" ;
     rdfs:comment "Relation avec la securite" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasAlerte a rdf:Property ;
+    rdfs:label "A comme Alerte" ;
+    rdfs:comment "Relation avec une Intrusion" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
