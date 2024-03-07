@@ -43,7 +43,7 @@ surv:Surveillance a rdfs:Class ;
     vs:term_status "experimental" .
 
 surv:Internet a rdfs:Class ;
-    rdfs:label "Neutralite" ;
+    rdfs:label "Internet" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
