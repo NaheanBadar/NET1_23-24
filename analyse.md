@@ -1,8 +1,11 @@
 # Surveillance & Sécurité en ligne - Nahean Binte BADAR
 
-Le choix de cette thématique comme domaine de connaissance repose sur le fait que l’utilisation d’Internet a connu une augmentation au cours des dernières années, et la question de la sécurité en ligne est centrale à cela. Dans plupart de mes recherches et lectures, j'ai pu constaté de nombreux cas de scandales liés au partage des données personnelles en ligne, visant à construire un profil des consommateurs et même à influencer les élections d’une puissance mondiale par exemple. La thématique de la surveillance était constamment présente dans mon analyse sur la cybersécurité et je pense que c'est un domaine qui doit être discutée par tous les utilisateurs, car elle aborde une question importante dans le numérique. La collecte de données commence dès le moment où une page web est ouverte, avec l’utilisation de cookies, et même la collecte d’informations sur la durée pendant laquelle le curseur de notre souris reste sur une annonce ou une vidéo spécifique. Cependant, cette collecte excessive n’est pas nécessaire, et il existe un intérêt évident de la part des “Big Techs” (GAFAM) à obtenir le maximum d’informations possible sur l’utilisateur, alors que les individus restent souvent indifférents à cette question de la protection des données.
+J'ai choissit comme domaine de connaissance la surveillance et la sécurité en ligne car je trouve que c'est un sujet qui est omniprésent aujourd'hui dans nos vies. En effet, avec le temps, l'utilisation d'Internet a beaucoup augmenté mais avec cette augmentation, les préoccupations concernant la surveillance et la sécurité en ligne se sont aussi intensifiées. À travers mes recherches et lectures que j'avais effectué lors de mon cours sur "Enjeux et pratiques du numérique" en semestre 1, j'ai découvert de nombreux cas de scandale lié à la violation de la vie privée et d'exploitation des données personnelles en ligne. Ces incidents, allant des scandales de partage de données à des fins commerciales jusqu'à l'exploitation de données pour influencer des événements politiques majeurs, ont mis en évidence l'importance de la surveillance et de la sécurité en ligne dans notre ère numérique. 
+
+Grâce à mes découverts durant ce cours, je pense qu'il serait intéressent de partager mes connaissances autour de ce domaine de surveillance et sécurité. 
 
 ##  Les vocabulaires
+
 
 ## Les ressources template
 
