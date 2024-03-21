@@ -12,382 +12,217 @@
 <https://jardindesconnaissances.univ-paris8.fr/onto/surv> a owl:Ontology ;
     dcterms:title "Surveillance" .
 
-surv:Cookie a rdfs:Class ;
-    rdfs:label "Cookie" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:Loi a rdfs:Class ;
-    rdfs:label "Loi" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:RegleNumerique a rdfs:Class ;
-    rdfs:label "RegleNumerique" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:Rgpb a rdfs:Class ;
-    rdfs:label "RGPD" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:SiteWeb a rdfs:Class ;
-    rdfs:label "SiteWeb" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:Surveillance a rdfs:Class ;
-    rdfs:label "Surveillance" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:Internet a rdfs:Class ;
-    rdfs:label "Internet" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:Neutralite a rdfs:Class ;
-    rdfs:label "Neutralite" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:DonneePerso a rdfs:Class ;
-    rdfs:label "DonneePerso" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:CNIL a rdfs:Class ;
-    rdfs:label "CNIL" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:Securite a rdfs:Class ;
-    rdfs:label "Securite" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:Cyberhygiene a rdfs:Class ;
-    rdfs:label "Cyberhygiene" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
 surv:Utilisateur a rdfs:Class ;
     rdfs:label "Utilisateur" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-surv:Anomalie a rdfs:Class ;
-    rdfs:label "Anomalie" ;
+surv:DonneePerso a rdfs:Class ;
+    rdfs:label "Donnee personnelle" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-surv:Intrusion a rdfs:Class ;
-    rdfs:label "Intrusion" ;
+surv:PlatformEnLigne a rdfs:Class ;
+    rdfs:label "Plateforme en ligne" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-surv:PolitiqueDeSecu a rdfs:Class ;
-    rdfs:label "Politique de securite" ;
+surv:Menace a rdfs:Class ;
+    rdfs:label "Menace" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:Reglementation a rdfs:Class ;
+    rdfs:label "Réglementations" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:Cyberhygiene a rdfs:Class ;
+    rdfs:label "Cyberhygiène" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+ 
+surv:Gouvernement a rdfs:Class ;
+    rdfs:label "Gouvernement" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:MesuresDeSecu a rdfs:Class ;
+    rdfs:label "Mesures de sécurité" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
+surv:hasIdentifiantUser a rdf:Property ;
+    rdfs:label "A comme Identifiant utilisateur" ;
+    rdfs:comment "Relation avec Utilisateur" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasUserHistoriqueConnexion a rdf:Property ;
+    rdfs:label "A comme Historique de connexion utilisateur" ;
+    rdfs:comment "Relation avec Utilisateur" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasUserPratiquesDeSecu a rdf:Property ;
+    rdfs:label "A comme Pratiques de sécurité adoptées" ;
+    rdfs:comment "Relation avec Utilisateur" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasCoordonnee a rdf:Property ;
+    rdfs:label "A comme Coordonnées" ;
+    rdfs:comment "Relation avec Utilisateur" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasCoordonnee a rdf:Property ;
+    rdfs:label "A comme Coordonnées" ;
+    rdfs:comment "Relation avec DonneePerso" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasLocalisation a rdf:Property ;
+    rdfs:label "A comme Localisation" ;
+    rdfs:comment "Relation avec DonneePerso" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasAdresseIP a rdf:Property ;
+    rdfs:label "A comme Adresse IP" ;
+    rdfs:comment "Relation avec DonneePerso" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasAdresseIP a rdf:Property ;
+    rdfs:label "A comme Adresse IP" ;
+    rdfs:comment "Relation avec Utilisateur" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:siteWeb a rdf:Property ;
+    rdfs:label "A comme site web" ;
+    rdfs:comment "Relation avec Plateforme en ligne" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:appliMob a rdf:Property ;
+    rdfs:label "A comme Applications Mobile" ;
+    rdfs:comment "Relation avec Plateforme en ligne" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
 surv:hasCookie a rdf:Property ;
-    rdfs:label "Les Cookies " ;
-    rdfs:comment "Relation avec un Utilisateur" ;
+    rdfs:label "A comme Cookie" ;
+    rdfs:comment "Relation avec Plateforme en ligne" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-surv:hasCookie a rdf:Property ;
-    rdfs:label "Les Cookies " ;
-    rdfs:comment "Relation avec la loi" ;
+surv:hasPolitiqueDeConfident a rdf:Property ;
+    rdfs:label "A comme Politique de confidentialité" ;
+    rdfs:comment "Relation avec Plateforme en ligne" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-surv:hasCookie a rdf:Property ;
-    rdfs:label "Les Cookies " ;
-    rdfs:comment "Relation avec la CNIL" ;
+surv:hasTypeMenace a rdf:Property ;
+    rdfs:label "A comme Type de menace" ;
+    rdfs:comment "Relation avec Menace" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-surv:hasLoi a rdf:Property ;
-    rdfs:label "A comme Loi" ;
-    rdfs:comment "Relation avec la loi" ;
+surv:hasAlerte a rdf:Property ;
+    rdfs:label "A comme Alerte" ;
+    rdfs:comment "Relation avec Menace" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasCible a rdf:Property ;
+    rdfs:label "A comme Cible" ;
+    rdfs:comment "Relation avec Menace" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:methodeDePropagation a rdf:Property ;
+    rdfs:label "A comme Méthodes de propagation" ;
+    rdfs:comment "Relation avec Menace" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasIntrusion a rdf:Property ;
+    rdfs:label "A comme Intrusion" ;
+    rdfs:comment "Relation avec Menace" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
 surv:hasRegleNumerique a rdf:Property ;
     rdfs:label "A comme Regle Numerique" ;
-    rdfs:comment "Relation avec la loi" ;
+    rdfs:comment "Relation avec la Réglementation " ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasLoi a rdf:Property ;
+    rdfs:label "A comme Loi" ;
+    rdfs:comment "Relation avec la Réglementation" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+surv:hasCNIL a rdf:Property ;
+    rdfs:label "A comme CNIL" ;
+    rdfs:comment "Relation avec la Réglementation" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
 surv:hasRGPD a rdf:Property ;
     rdfs:label "A comme RGPD" ;
-    rdfs:comment "Relation avec les Cookies" ;
+    rdfs:comment "Relation avec la Réglementation" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-surv:hasRGPD a rdf:Property ;
-    rdfs:label "A comme RGPD" ;
-    rdfs:comment "Relation avec la Regle Numerique" ;
+surv:hasSanctions a rdf:Property ;
+    rdfs:label "A comme Sanctions" ;
+    rdfs:comment "Relation avec la Réglementation" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-surv:hasSiteWeb a rdf:Property ;
-    rdfs:label "A comme SiteWeb" ;
-    rdfs:comment "Relation avec les Cookies" ;
+surv:hasTerritoire  a rdf:Property ;
+    rdfs:label "A comme Territoire " ;
+    rdfs:comment "Relation avec la Réglementation" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-surv:hasSiteWeb a rdf:Property ;
-    rdfs:label "A comme SiteWeb" ;
-    rdfs:comment "Relation avec la Politique de securite" ;
+surv:hasBonnesPratique  a rdf:Property ;
+    rdfs:label "A comme Bonnes pratiques en ligne" ;
+    rdfs:comment "Relation avec la Cyberhygiène" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-surv:hasRGPD a rdf:Property ;
-    rdfs:label "A comme RGPD" ;
-    rdfs:comment "Relation avec un SiteWeb" ;
+surv:hasMAJ  a rdf:Property ;
+    rdfs:label "A comme Mises à jours" ;
+    rdfs:comment "Relation avec la Cyberhygiène" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-surv:hasSurveillance a rdf:Property ;
-    rdfs:label "A comme Surveillance" ;
-    rdfs:comment "Relation avec un SiteWeb" ;
+surv:hasResponsabilites a rdf:Property ;
+    rdfs:label "A comme Responsabilités" ;
+    rdfs:comment "Relation avec Gouvernement" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-surv:hasSurveillance a rdf:Property ;
-    rdfs:label "A comme Surveillance" ;
-    rdfs:comment "Relation avec les Cookies" ;
+surv:hasInitiativesDeSecu a rdf:Property ;
+    rdfs:label "A comme Initiatives de sécurité en ligne" ;
+    rdfs:comment "Relation avec Gouvernement" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-surv:hasInternet a rdf:Property ;
-    rdfs:label "A comme Internet" ;
-    rdfs:comment "Relation avec un SiteWeb" ;
+surv:hasLogicielsAntivirus a rdf:Property ;
+    rdfs:label "A comme Logiciels antivirus" ;
+    rdfs:comment "Relation avec les Mesures de sécurité" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-surv:hasInternet a rdf:Property ;
-    rdfs:label "A comme Internet" ;
-    rdfs:comment "Relation avec la Surveillance" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasInternet a rdf:Property ;
-    rdfs:label "A comme Internet" ;
-    rdfs:comment "Relation avec la tracabilite" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasInternet a rdf:Property ;
-    rdfs:label "A comme Internet" ;
-    rdfs:comment "Relation avec la Politique de securite" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasNeutralite a rdf:Property ;
-    rdfs:label "A comme Neutralite" ;
-    rdfs:comment "Relation avec Internet" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasDonneePerso a rdf:Property ;
-    rdfs:label "A comme DonneePerso" ;
-    rdfs:comment "Relation avec les Cookies" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasDonneePerso a rdf:Property ;
-    rdfs:label "A comme DonneePerso" ;
-    rdfs:comment "Relation avec SiteWeb" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasDonneePerso a rdf:Property ;
-    rdfs:label "A comme DonneePerso" ;
-    rdfs:comment "Relation avec RGPD" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasDonneePerso a rdf:Property ;
-    rdfs:label "A comme DonneePerso" ;
-    rdfs:comment "Relation avec la CNIL" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasDonneePerso a rdf:Property ;
-    rdfs:label "A comme DonneePerso" ;
-    rdfs:comment "Relation avec un Utilisateur" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasDonneePerso a rdf:Property ;
-    rdfs:label "A comme DonneePerso" ;
-    rdfs:comment "Relation avec une Intrusion" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasCNIL a rdf:Property ;
-    rdfs:label "A comme CNIL" ;
-    rdfs:comment "Relation avec les Cookies" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasCNIL a rdf:Property ;
-    rdfs:label "A comme CNIL" ;
-    rdfs:comment "Relation avec la RGPD" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasCNIL a rdf:Property ;
-    rdfs:label "A comme CNIL" ;
-    rdfs:comment "Relation avec un SiteWeb" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasCNIL a rdf:Property ;
-    rdfs:label "A comme CNIL" ;
-    rdfs:comment "Relation avec la Regle Numerique" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasCNIL a rdf:Property ;
-    rdfs:label "A comme CNIL" ;
-    rdfs:comment "Relation avec la loi" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasSecurite a rdf:Property ;
-    rdfs:label "A comme Securite" ;
-    rdfs:comment "Relation avec les Donnees personnelles" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasSecurite a rdf:Property ;
-    rdfs:label "A comme Securite" ;
-    rdfs:comment "Relation avec Internet" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasSecurite a rdf:Property ;
-    rdfs:label "A comme Securite" ;
-    rdfs:comment "Relation avec les anomalies" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasSecurite a rdf:Property ;
-    rdfs:label "A comme Securite" ;
-    rdfs:comment "Relation avec la tracabilite" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasCyberhygiene a rdf:Property ;
-    rdfs:label "A comme Cyberhygiene" ;
-    rdfs:comment "Relation avec les Donnees personnelles" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasCyberhygiene a rdf:Property ;
-    rdfs:label "A comme Cyberhygiene" ;
-    rdfs:comment "Relation avec les Donnees personnelles" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasCyberhygiene a rdf:Property ;
-    rdfs:label "A comme Cyberhygiene" ;
-    rdfs:comment "Relation avec Internet" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasCyberhygiene a rdf:Property ;
-    rdfs:label "A comme Cyberhygiene" ;
-    rdfs:comment "Relation avec la Securite" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasCyberhygiene a rdf:Property ;
-    rdfs:label "A comme Cyberhygiene" ;
-    rdfs:comment "Relation avec des bonnes pratiques" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasUtilisateur a rdf:Property ;
-    rdfs:label "A comme Utilisateur" ;
-    rdfs:comment "Relation avec la surveillance" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasUtilisateur a rdf:Property ;
-    rdfs:label "A comme Utilisateur" ;
-    rdfs:comment "Relation avec la tracabilite" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasUtilisateur a rdf:Property ;
-    rdfs:label "A comme Utilisateur" ;
-    rdfs:comment "Relation avec les donnees personnelles" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasUtilisateur a rdf:Property ;
-    rdfs:label "A comme Utilisateur" ;
-    rdfs:comment "Relation avec Internet" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasUtilisateur a rdf:Property ;
-    rdfs:label "A comme Utilisateur" ;
-    rdfs:comment "Relation avec Site Web" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasUtilisateur a rdf:Property ;
-    rdfs:label "A comme Utilisateur" ;
-    rdfs:comment "Relation avec Cyberhygiene" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasUtilisateur a rdf:Property ;
-    rdfs:label "A comme Utilisateur" ;
-    rdfs:comment "Relation avec des anomalies" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasUtilisateur a rdf:Property ;
-    rdfs:label "A comme Utilisateur" ;
-    rdfs:comment "Relation avec une Intrusion" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasIntrusion a rdf:Property ;
-    rdfs:label "A comme Intrusion" ;
-    rdfs:comment "Relation avec un utilisateur" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasIntrusion a rdf:Property ;
-    rdfs:label "A comme Intrusion" ;
-    rdfs:comment "Relation avec un site web" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasAlerte a rdf:Property ;
-    rdfs:label "A comme Alerte" ;
-    rdfs:comment "Relation avec une anomalie" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasAlerte a rdf:Property ;
-    rdfs:label "A comme Alerte" ;
-    rdfs:comment "Relation avec la securite" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-surv:hasAlerte a rdf:Property ;
-    rdfs:label "A comme Alerte" ;
-    rdfs:comment "Relation avec une Intrusion" ;
+surv:hasParefeuActif a rdf:Property ;
+    rdfs:label "A comme Pare-feu activé" ;
+    rdfs:comment "Relation avec les Mesures de sécurité" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
